@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My LWC App</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <script src="resources/oasis.js"></script>
+        <script>
+            const el = document.querySelector(`[data-id="my-id"]`);
+            console.log(`Outside Oasis: ${el}`);
+        </script>
+        <x-oasis-script src="resources/my-script.js"></x-oasis-script>
+        <!--<x-oasis-script src="http://cdn.evgnet.com/beacon/interactionstudio/adityasandbox/scripts/evergage.js"></x-oasis-script>-->
+        <!-- Block zoom -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <link rel="shortcut icon" href="./resources/favicon.ico" />
+    </head>
+    <body>
+        <div id="main"></div>
+    </body>
+</html>
